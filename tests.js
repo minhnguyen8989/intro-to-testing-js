@@ -44,3 +44,18 @@ describe('sayHello', function() {
     });
 });
 
+describe("isFive", function () {
+    it("is function \'isFive\' exist", function () {
+        expect(typeof isFive).toBe('function' );
+    });
+    it("return TRUE if the function is boolean", function () {
+        expect(typeof isFive(5)).toBe('boolean');
+    });
+    it("return TRUE when passed 5", function () {
+        expect(isFive(true)).toBe('5');
+    });
+    it("return FALSE when string is defined", function () {
+        expect(typeof isFive).not.toBe('string');
+    });
+});
+
