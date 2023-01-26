@@ -32,5 +32,15 @@ describe('sayHello', function() {
     });
     it("should return a string \"Pat\" when executed", function () {
         expect(sayHello("Pat")).toBe("Hello, Pat!")
-    })
+    });
+    it("should return a string \"Hello, World!\" when executed", function () {
+        expect(sayHello()).toBe("Hello, World!")
+    });
+    it("should be \"true\" when return \"Hello, World!\"", function () {
+        expect(sayHello(true)).toBe("Hello, World!")
+    });
+    it("should be \"False\" when return \"Hello, World!\"", function () {
+        expect(sayHello(false)).toBe("Hello, World!")
+    });
 });
+
